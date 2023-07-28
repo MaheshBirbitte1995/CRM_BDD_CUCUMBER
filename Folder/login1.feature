@@ -1,4 +1,5 @@
 Feature: Login
+@login
 Scenario: Login to Apption
 Given user is on portal "https://devportal.uncode.io/apption/login"
 When User enter Username as "Saigaurav"

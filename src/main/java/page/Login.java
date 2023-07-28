@@ -30,6 +30,7 @@ public class Login {
 
 
 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 
 		WebElement username = driver.findElement( By.xpath("//*[@id='username']"));
 
@@ -52,6 +53,7 @@ public class Login {
 
 
 
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
 		WebElement pass = driver.findElement(By.xpath("//*[@id='password']"));
 
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(30));

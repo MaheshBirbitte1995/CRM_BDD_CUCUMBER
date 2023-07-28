@@ -5,10 +5,12 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 		
-		features = ".//Folder/login1.feature",
-		glue = "stepdefinations",
+		features = "Folder\\login1.feature",
+		glue = "Test",
 	
-		plugin = "pretty"
+		plugin = "pretty",
+		 tags = "@login"S
+		 
 		
 		)
 public class test_runner extends AbstractTestNGCucumberTests {
