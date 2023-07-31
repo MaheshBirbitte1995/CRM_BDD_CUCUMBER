@@ -8,8 +8,11 @@ import io.cucumber.testng.CucumberOptions;
 		features = "Folder\\login1.feature",
 		glue = "Test",
 	
-		plugin = "pretty",
-		 tags = "@login"S
+				plugin = {"pretty",
+						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
+						"rerun:target/failedrun.txt"
+				},
+		 tags = "@login"
 		 
 		
 		)

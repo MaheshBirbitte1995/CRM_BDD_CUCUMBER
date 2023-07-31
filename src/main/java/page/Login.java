@@ -14,11 +14,6 @@ public class Login {
 
 
 	
-
-	
-
-
-
 	public Login (WebDriver driver)
 	{
 		this.driver=driver;
@@ -72,3 +67,4 @@ public class Login {
 
 
 }
+
