@@ -129,19 +129,24 @@ public void new_contact_is_created() {
 }
 
 @When("User click on More option and edit button")
-public void user_click_on_more_option_and_edit_button() {
-  
+public void user_click_on_more_option_and_edit_button() throws InterruptedException {
+  Contact.More_option_and_edit_button();
 }
 @When("Click Make change in Name")
 public void click_make_change_in_name() {
 
+	Contact.change_in_name();
 }
 @When("Click on Update button")
 public void click_on_update_button() {
+	
+	Contact.update_button();
 
 }
 @Then("Contact is edited Successfully")
 public void contact_is_edited_successfully() {
+	
+	System.out.println("gg");
      
 }
 

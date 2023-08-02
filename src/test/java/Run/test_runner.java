@@ -12,7 +12,7 @@ import io.cucumber.testng.CucumberOptions;
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failedrun.txt"
 		},
-	//tags = "@EditContact",
+	tags = "@EditContact",
 		monochrome = false,
 		
 				dryRun = false

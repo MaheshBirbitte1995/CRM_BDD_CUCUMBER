@@ -68,7 +68,7 @@ public class Contact_page {
 	WebElement Save ;
 	
 	
-	@FindBy (xpath = "//div[@id='grid-view-container-1690968364252']//div[1]//div[1]//div[2]//span[1]//span[1]//i[1]")
+	@FindBy (xpath = "/html[1]/body[1]/app-root[1]/app-root[1]/app-home[1]/div[2]/div[2]/div[1]/app-app-id[1]/div[1]/div[1]/div[1]/div[1]/div[1]/app-controller-id[1]/app-smart-view-render[1]/div[1]/div[1]/div[2]/app-grid-view-render[1]/div[1]/div[1]/div[1]/div[1]/div[2]/span[1]/span[1]/i[1]")
 	WebElement MoreOption ;
 	
 	@FindBy (xpath = "//div[contains(@class,'dropdown-menu show')]//span[contains(@class,'text-truncate')][normalize-space()='Edit']")
@@ -140,6 +140,7 @@ public class Contact_page {
 	 
 	 public void More_option_and_edit_button() throws InterruptedException {
 		 
+		 Thread.sleep(9000);
 		 MoreOption.click();
 			Thread.sleep(2000);
 		 EditBotton.click();
