@@ -12,7 +12,9 @@ import io.cucumber.testng.CucumberOptions;
 						"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 						"rerun:target/failedrun.txt"
 				},
-		 tags = "@login"
+				
+				dryRun = false,
+		 tags = "@lead"
 		 
 		
 		)
