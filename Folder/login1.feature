@@ -17,10 +17,21 @@ Feature: Login
     And Click on save
     Then Lead created successfully
 
-  @Accounts
-  Scenario: Creating new accounts module
-    And click on Accounts module
-    And Click on add button
-    And enter All input
-    And Click on save
-    Then Accounts created successfully
+
+@Contact
+Scenario: Add New Contact
+
+And User is able to Click on Contact module
+And User is able to click on Add button
+And User is Enter all  required inputs
+And User is able to Click on Save button
+Then New Contact is Created
+
+@EditContact
+Scenario: Edit Existing Contact
+And User click on More option and edit button
+And Click Make change in Name 
+And Click on Update button 
+Then Contact is edited Successfully
+
+

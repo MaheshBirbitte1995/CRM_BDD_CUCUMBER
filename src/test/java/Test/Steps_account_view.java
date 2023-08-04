@@ -8,24 +8,21 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import page.Leads_creation;
+import page.Accounts_creation;
 import page.Login;
 
-public class Add_leads_module {
-
-
+public class Steps_account_view {
+	WebDriver driver ;
 	public Login login  ;
-	WebDriver driver;
-	public Leads_creation lead;
+	public Accounts_creation account;
 	@Before
 	public void init()
 	{	
 
 		driver = new ChromeDriver();
 		login  = new Login(driver);
-		lead  = new Leads_creation(driver);
+		account = new Accounts_creation(driver);
 
 	}
 
@@ -55,33 +52,42 @@ public class Add_leads_module {
 
 
 
-
-
-	@When("Click on Lead module")
-	public void click_on_lead_module() {
-		lead.ClickLeadModule();
-
-	}
-
-	@When("click on add button")
-	public void click_on_add_button() {
-		lead.Leads_AddButton();
+	@When("click on edit  view dots icon")
+	public void click_on_edit_view_dots_icon() {
+    account.ViewModule();
+      
 
 	}
-	@When("Enter All input")
-	public void enter_all_input() {
-		lead.AllInput();
+	@When("click on   Edit icon")
+	public void click_on_edit_icon() {
+     account.editModule();
+		
+		
+	}
+	@When("click on Change Account owner")
+	public void click_on_change_account_owner() {
+    account.editModule();
+
 
 	}
-	@When("Click on save")
-	public void click_on_save() {
-		lead.SaveB();
-
+	@When("click on Save icon")
+	public void click_on_save_icon() {
+	
+	account.savec();
+	
 	}
-	@Then("Lead created successfully")
-	public void lead_created_successfully() {
 
-		System.out.println("Successfully Created ");
+	
+	@When("click on delete dots icon")
+	public void click_on_delete_dots_icon() {
+		
+		account.DeleteAccount();
+		
 	}
+	@When("click on  delete icon.")
+	public void click_on_delete_icon() {
+		
+		
+	}	
 
 }

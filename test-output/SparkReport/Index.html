@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">CRM Test Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 1, 2023 07:10:27 pm</span></a>
+<a href="#"><span class="badge badge-primary">Aug 4, 2023 03:46:52 pm</span></a>
 </li>
 </ul>
 </div>
@@ -57,6 +57,11 @@
 <span class="ico"><i class="fa fa-tag"></i></span>
 </a>
 </li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
 </ul>
 </div>
 </div>      <div class="vcontainer">
@@ -66,13 +71,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 1, 2023 07:10:27 pm</h3>
+<h3>Aug 4, 2023 03:46:52 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 1, 2023 07:10:28 pm</h3>
+<h3>Aug 4, 2023 03:47:11 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -143,9 +148,9 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='37%'><b>3</b> steps passed</small></div>
+<div><small data-tooltip='46%'><b>6</b> steps passed</small></div>
 <div>
-<small data-tooltip='12%'><b>1</b> steps failed,
+<small data-tooltip='23%'><b>3</b> steps failed,
 <b>4</b> skipped, <b data-tooltip='%'>0</b> others
 </small>
 </div>
@@ -162,7 +167,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login":0.034
+"Login":18.291
 };
 </script>
 <div class="row">
@@ -172,7 +177,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@lead</td>
+<td>@AccountsCreate</td>
 <td>0</td>
 <td>1</td>
 <td>0</td>
@@ -225,8 +230,8 @@ warningChild: 0,
 skipChild: 0,
 infoChild: 0,
 grandChildCount: 5,
-passGrandChild: 3,
-failGrandChild: 1,
+passGrandChild: 6,
+failGrandChild: 3,
 warningGrandChild: 0,
 skipGrandChild: 4,
 infoGrandChild: 0,
@@ -250,7 +255,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@lead</a>
+<a class="dropdown-item" href="#">@AccountsCreate</a>
 </ul>
 </li>
 </ul>
@@ -263,7 +268,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Login</p>
             <p class="text-sm">
-              <span>7:10:28 pm</span> / <span>00:00:00:034</span>
+              <span>3:46:53 pm</span> / <span>00:00:18:291</span>
               <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
@@ -272,9 +277,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-fail">Login</h5>
-<span class='badge badge-success'>08.01.2023 7:10:28 pm</span>
-<span class='badge badge-danger'>08.01.2023 7:10:28 pm</span>
-<span class='badge badge-default'>00:00:00:034</span>
+<span class='badge badge-success'>08.04.2023 3:46:53 pm</span>
+<span class='badge badge-danger'>08.04.2023 3:47:11 pm</span>
+<span class='badge badge-default'>00:00:18:291</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -286,49 +291,109 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Creating new lead Module</div>
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>Creating new accounts module</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
       </div>
     </div>
         <div class="">
           <div class="card-body">
-              <div class="step pass-bg" title="Test.stepdefinations.user_is_on_portal(java.lang.String)">
+              <div class="step pass-bg" title="Test.Step_contact.user_is_on_portal(java.lang.String)">
                 <span>Given user is on portal "https://devportal.uncode.io/apption/login"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="Test.stepdefinations.user_enter_username_as(java.lang.String)">
+              <div class="step pass-bg" title="Test.Step_contact.user_enter_username_as(java.lang.String)">
                 <span>When User enter Username as "Saigaurav"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="Test.stepdefinations.user_enter_password_as(java.lang.String)">
+              <div class="step pass-bg" title="Test.Step_contact.user_enter_password_as(java.lang.String)">
                 <span>And User enter Password as "Uncode@123"</span>
       <div>
       </div>
               </div>
-              <div class="step fail-bg" >
-                <span>And Click on Lead module</span>
-      <div>Step undefined
+              <div class="step fail-bg" title="Test.Add_accounts_module.click_on_accounts_module()">
+                <span>And click on Accounts module</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+	at page.Accounts_creation.Accounts_Module_wise(Accounts_creation.java:116)
+	at Test.Add_accounts_module.click_on_accounts_module(Add_accounts_module.java:62)
+	at ✽.click on Accounts module(file:///C:/Users/Mahesh/eclipse-workspace/BDD/Folder/account.feature:10)
+</textarea>
+      
       </div>
               </div>
-              <div class="step skip-bg" >
-                <span>And click on add button</span>
+              <div class="step skip-bg" title="Test.Add_accounts_module.click_on_add_button()">
+                <span>And Click on add button</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" >
-                <span>And Enter All input</span>
+              <div class="step skip-bg" title="Test.Add_accounts_module.enter_all_input()">
+                <span>And enter All input</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" >
+              <div class="step skip-bg" title="Test.Add_leads_module.click_on_save()">
                 <span>And Click on save</span>
       <div>Step skipped
       </div>
               </div>
-              <div class="step skip-bg" >
-                <span>Then Lead created successfully</span>
+              <div class="step skip-bg" title="Test.Add_accounts_module.accounts_created_successfully()">
+                <span>Then Accounts created successfully</span>
       <div>Step skipped
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Test.Step_contact.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Creating_new_accounts_module
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded1.png' src="../embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Test.Steps_account_view.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Creating_new_accounts_module
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded2.png' src="../embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>Test.Add_leads_module.tearDown(io.cucumber.java.Scenario)</span>
+      <div>Creating_new_accounts_module
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='../embedded3.png' src="../embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>Test.Add_accounts_module.tearDown(io.cucumber.java.Scenario)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.TakesScreenshot.getScreenshotAs(org.openqa.selenium.OutputType)" because "ts" is null
+	at Test.Add_accounts_module.tearDown(Add_accounts_module.java:49)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step fail-bg" title="AFTER">
+                <span>Test.Add_accounts_module.end()</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
+	at Test.Add_accounts_module.end(Add_accounts_module.java:34)
+</textarea>
+      
       </div>
               </div>
           </div>
@@ -359,12 +424,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log badge-danger'>1</span>
 </span>
-<p class="name">@lead</p>
+<p class="name">@AccountsCreate</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@lead</h4>
+<h4>@AccountsCreate</h4>
 <span status="fail" class='badge log badge-danger'>1 failed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -378,11 +443,83 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="fail">
 <td><span class="badge log fail-bg">Fail</span></td>
-<td>19:10:28 pm</td>
+<td>15:46:53 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>Creating new lead Module</a>
+<a href="#" class="linked" test-id='1' id='2'>Creating new accounts module</a>
 <div class="">
-<span class="badge badge-default">Login.Creating new lead Module</span>
+<span class="badge badge-default">Login.Creating new accounts module</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>3</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>3 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:47:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='10'>And click on Accounts module</a>
+<div class="">
+<span class="badge badge-default">Login.Creating new accounts module.And click on Accounts module</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:47:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>Test.Add_accounts_module.tearDown(io.cucumber.java.Scenario)</a>
+<div class="">
+<span class="badge badge-default">Login.Creating new accounts module.Test.Add_accounts_module.tearDown(io.cucumber.java.Scenario)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:47:11 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='22'>Test.Add_accounts_module.end()</a>
+<div class="">
+<span class="badge badge-default">Login.Creating new accounts module.Test.Add_accounts_module.end()</span>
 </div>
 </td>
 </tr>
