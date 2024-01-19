@@ -114,7 +114,7 @@ public class Accounts_creation  {
 	public void Accounts_Module_wise() throws InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-         // Thread.sleep(9000);
+          Thread.sleep(5000);
 		Accounts_click.click();
 	}	 
 

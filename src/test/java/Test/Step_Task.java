@@ -8,27 +8,26 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
-import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import page.Accounts_creation;
+
 import page.Login;
+import page.Task_creation;
 
-public class Add_accounts_module  {
+public class Step_Task {
 
-	
+
 	public WebDriver driver=new ChromeDriver();
-	
-	
-	public Accounts_creation accountcreationWise= new Accounts_creation(driver);
 
-	 Login login  = new Login(driver);
-	
 
-	
+	Login login  = new Login(driver);
+
+	Task_creation tasks = new Task_creation(driver);
+
+
 	@Before
 	public void init()
 	{	
-System.out.println(" ");
+		System.out.println(" ");
 	}
 
 	@After (order = 1)
@@ -54,37 +53,38 @@ System.out.println(" ");
 			scenario.attach(source, "image/png", screenshotname);
 		}
 	}
-	
-	
-	
-	
-	@When("click on Accounts module")
-	public void click_on_accounts_module() throws InterruptedException {
-		
-		
-		accountcreationWise.Accounts_Module_wise();
-		
+
+
+
+	@When("click on Task")
+	public void click_on_task() throws InterruptedException {
+
+		tasks.task();
+
+
 	}
 
-	@When("Click on add button")
-	public void click_on_add_button() {
-	   
-		accountcreationWise.ClickAccountModule();
+	@When("click on Create Task")
+	public void click_on_create_task() throws InterruptedException {
+
+		tasks.Creating_TaskWise();
+
 	}
 
-	@When("enter All input")
-	public void enter_all_input() {
-	   
-		accountcreationWise.Allinputs();
+	@When("click on all Inputs")
+	public void click_on_all_inputs()throws InterruptedException {
+
+		tasks.feilds_enter();
+
 	}
 
-	@Then("Accounts created successfully")
-	public void accounts_created_successfully() {
-	    
-		accountcreationWise.savec();
-		
-	 System.out.println("Account is created successfully");	
+	@When("click on save")
+	public void click_on_save() {
+
+		tasks.saved();
+
 	}
-	
-	
+
+
+
 }

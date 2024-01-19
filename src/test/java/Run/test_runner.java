@@ -5,21 +5,21 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
 
-		features = "Folder",
+		features = "Folder//Task.feature",
 		glue = "Test",
 
-	
-        
+
+
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				"rerun:target/failedrun.txt"
 		},
-	tags = "@AccountsCreate",
+		//tags = "@TaskCreate",
 		monochrome = false,
 
-		
-				dryRun = false
-		
+
+		dryRun = false
+
 
 
 
